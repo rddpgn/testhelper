@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "IBM Plex Sans";
+    src: url("/public/fonts/IBMPlexSans-Bold.ttf") format("ttf"),
+         url("/public/fonts/IBMPlexSans-Regular.ttf") format("woff");
+}
+
+:root {
+    --main-bg-color: #1C1C1C
+}
