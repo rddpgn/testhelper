@@ -1,18 +1,30 @@
-import TabController from "../../components/tab/TabController";
+import Tabs from "../../components/tabs/Tabs";
+import Tab from "../../components/tabs/Tab";
+
+enum HeaderTabs {
+    SETTINGS = 'settings',
+    COMMANDS = 'commands',
+}
 
 function HeaderController() {
     return (
         <div>
-            <TabController tabs={[
-                {
-                    name: 'Настройки',
-                    callback: () => console.log('Настройки'),
-                },
-                {
-                    name: 'Команды',
-                    callback: () => console.log('Команды'),
-                }
-            ]}/>
+            <Tabs
+                initialTab={HeaderTabs.SETTINGS}
+            >
+                <Tab
+                    id={HeaderTabs.SETTINGS}
+                    key={HeaderTabs.SETTINGS}
+                >
+                    Настройки
+                </Tab>
+                <Tab
+                    id={HeaderTabs.COMMANDS}
+                    key={HeaderTabs.COMMANDS}
+                >
+                    Команды
+                </Tab>
+            </Tabs>
         </div>
     )
 }

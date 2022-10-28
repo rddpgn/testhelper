@@ -1,7 +1,7 @@
 @font-face {
     font-family: "IBM Plex Sans";
     src: url("/public/fonts/IBMPlexSans-Bold.ttf") format("ttf"),
-         url("/public/fonts/IBMPlexSans-Regular.ttf") format("woff");
+         url("/public/fonts/IBMPlexSans-Regular.ttf") format("ttf");
 }
 
 :root {

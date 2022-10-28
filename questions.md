@@ -2,3 +2,5 @@
 - Объявлние типов в тс через интерфейс / тайпдеф
 - ?. и подобного рода конструкции
 - Юз мемо
+- Реакт порталы и фрагменты
+- Типизация клонирования https://blog.cristiana.tech/react-children-map-and-cloneelement-using-typescript
