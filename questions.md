@@ -4,3 +4,5 @@
 - Юз мемо
 - Реакт порталы и фрагменты
 - Типизация клонирования https://blog.cristiana.tech/react-children-map-and-cloneelement-using-typescript
+- Что такое миксины
+- Какие правильные депенденси нужны для useCallback

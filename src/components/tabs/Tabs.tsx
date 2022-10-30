@@ -3,7 +3,7 @@ import React, {useCallback, useState} from "react";
 type Props = {
     children: JSX.Element | JSX.Element[];
     initialTab: string,
-    onTabChanged?: (tabId: string) => void;
+    onTabChanged?: (tab: string) => void;
 }
 
 function getChildTabs(children: JSX.Element | JSX.Element[]) {
@@ -16,7 +16,7 @@ function Tabs({children, initialTab, onTabChanged}: Props) {
     const clickHandler = useCallback((id: string) => {
         updateSelectedTab(id);
         onTabChanged && onTabChanged(id);
-    }, [children]);
+    }, [children, selectedTab, onTabChanged]);
 
     const clone = (tab: JSX.Element) => React.cloneElement(tab, {
         ...tab.props,
@@ -25,10 +25,10 @@ function Tabs({children, initialTab, onTabChanged}: Props) {
     });
 
     return (
-        <>
+        <div>
             {getChildTabs(children)
                 .map(clone)}
-        </>
+        </div>
     )
 }
 

@@ -1,5 +1,6 @@
 import React, {useCallback} from "react";
-import style from './style.module.css';
+import style from './Tab.module.css';
+import mcn from "../../utils/MergeClassNames";
 
 type Props = {
     id: string,
@@ -13,7 +14,7 @@ function Tab({id, selected, children, onClick}: Props) {
 
     return (
         <span
-            className={`${style.tab} ${selected && style.selected}`}
+            className={mcn(style.tab, selected && style.selected, '.noselect')}
             onClick={clickHandler}
         >
             {children}

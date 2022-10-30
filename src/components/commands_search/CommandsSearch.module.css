@@ -1,0 +1,36 @@
+.wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+}
+
+.wrapper:focus-within {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.wrapper:focus-within .icon {
+    opacity: 1;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+    background-image: url("icons/icon_search.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding-right: 8px;
+    margin-right: 8px;
+    opacity: 0.5;
+}
+
+.input {
+    flex: 1 1 0;
+    background: none;
+    border: none;
+    color: #ffffff;
+    outline: none;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 16px;
+}
