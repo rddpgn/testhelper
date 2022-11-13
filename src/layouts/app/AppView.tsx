@@ -3,6 +3,7 @@ import Tabs from "../../components/tabs/Tabs";
 import Tab from "../../components/tabs/Tab";
 import {HeaderTabs} from "./AppRepository";
 import CommandsSearch from "../../components/commands_search/CommandsSearch";
+import CommandsSelect from "../../components/commands_select/CommandsSelect";
 
 type Props = {
     currentTab: HeaderTabs;
@@ -36,6 +37,8 @@ function AppView({currentTab, onTabChanged}: Props) {
             { currentTab === HeaderTabs.COMMANDS && <div>
                 <CommandsSearch
                     onChange={(val) => console.log(val)}
+                />
+                <CommandsSelect
                 />
             </div>}
         </div>

@@ -15,8 +15,7 @@ function CommandsSearch({onChange}: Props) {
 
     return (
         <div className={style.wrapper}>
-            <div className={style.icon}>
-            </div>
+            <div className={style.icon}/>
             <input
                 className={style.input}
                 type="text"

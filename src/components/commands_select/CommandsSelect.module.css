@@ -1,0 +1,94 @@
+.wrapper {
+    position: relative;
+}
+
+.select_wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    box-sizing: border-box;
+}
+
+.options_wrapper {
+    display: none;
+    top: -8px;
+    position: absolute;
+    color: #ffffff;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 16px;
+    background-color: #262626;
+    width: 98%;
+    left: 1%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0px 4px 16px 0px rgb(0 0 0 / 50%);
+    border: 1px solid rgba(255,255,255, 0.1);
+    font-weight: normal;
+}
+
+.options_wrapper_active {
+    display: block;
+}
+
+.option {
+    position: relative;
+    padding: 4px 45px;
+    user-select: none;
+}
+
+.option_selected::before {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    display: block;
+    content: "";
+    background-color: white;
+    border-radius: 50%;
+    left: 20px;
+    transform: translateY(5px);
+}
+
+.option:first-child {
+    padding-top: 12px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.option:last-child {
+    padding-bottom: 12px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.option:hover {
+    background-color: #353535;
+    cursor: pointer;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+    background-image: url("icons/icon_burger.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding-right: 8px;
+    margin-right: 8px;
+    opacity: 0.5;
+}
+
+.value {
+    flex: 1 1 0;
+    background: none;
+    border: none;
+    color: #ffffff;
+    outline: none;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 16px;
+    text-align: left;
+    opacity: 0.5;
+    padding: 0;
+    cursor: pointer;
+    font-weight: 300;
+}
